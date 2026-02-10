@@ -38,5 +38,37 @@
     "rentabilidade": "Variável",
     "aporte_minimo": 100.00,
     "indicado_para": "Perfil arrojado com foco no longo prazo"
+  },
+  {
+    "nome": "Fundo Imobiliario (FII)",
+    "categoria": "renda variável",
+    "risco": "alto",
+    "rentabilidade": "Variável - O IFIX (índice de FIIs) tem yield médio em torno de 11,5% ao ano (aprox. 0,95% ao mês).",
+    "aporte_minimo": 10.00,
+    "indicado_para": "Perfil arrojado com foco no longo prazo"
+  },
+  {
+    "nome": "Tesouro IPCA+",
+    "categoria": "fundo",
+    "risco": "baixo",
+    "rentabilidade": "Variável acima da inflação",
+    "aporte_minimo": Entre 8,00 e 45,00,
+    "indicado_para": "Objetivos de longo prazo, como aposentadoria"
+  },
+  {
+    "nome": "Tesouro Renda+",
+    "categoria": "fundo",
+    "risco": "baixo",
+    "rentabilidade": "Variável acima da inflação",
+    "aporte_minimo": Entre 30,00 e 40,00,
+    "indicado_para": "Título focado na aposentadoria, oferecendo renda mensal por 20 anos após um período de acumulação"
+  },
+  {
+    "nome": "Tesouro Educa+",
+    "categoria": "fundo",
+    "risco": "baixo",
+    "rentabilidade": "Variável acima da inflação",
+    "aporte_minimo": 30.00,
+    "indicado_para": "Projetado para financiar estudos, com fluxo de recebimento focado em cobrir despesas educacionais."
   }
 ]
