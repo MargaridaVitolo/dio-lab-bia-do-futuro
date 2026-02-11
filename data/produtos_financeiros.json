@@ -52,7 +52,7 @@
     "categoria": "fundo",
     "risco": "baixo",
     "rentabilidade": "Variável acima da inflação",
-    "aporte_minimo": Entre 8,00 e 45,00,
+    "aporte_minimo": 8,00,
     "indicado_para": "Objetivos de longo prazo, como aposentadoria"
   },
   {
@@ -60,7 +60,7 @@
     "categoria": "fundo",
     "risco": "baixo",
     "rentabilidade": "Variável acima da inflação",
-    "aporte_minimo": Entre 30,00 e 40,00,
+    "aporte_minimo": 30,00,
     "indicado_para": "Título focado na aposentadoria, oferecendo renda mensal por 20 anos após um período de acumulação"
   },
   {
