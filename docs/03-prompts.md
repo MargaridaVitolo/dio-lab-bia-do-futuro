@@ -235,4 +235,5 @@ Minha especialização é restrita à consultoria financeira e ao planejamento d
 > Registre aqui ajustes que você fez nos prompts e por quê.
 
 - Para testar a robustez da AnaLis, precisamos de cenários que desafiem os limites das regras (especialmente a Regra 6 sobre não recomendar produtos e a Regra 3 sobre admitir desconhecimento).
+- As respostas das LLM's GPT e Gemini, baseadas no system prompt apresentaram resultados similares, inclusive nas questões Edge.
 
