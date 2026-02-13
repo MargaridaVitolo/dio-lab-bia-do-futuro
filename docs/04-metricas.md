@@ -28,44 +28,47 @@ Crie testes simples para validar seu agente:
 
 ### Teste 1: Consulta de gastos
 - **Pergunta:** "Quanto gastei com alimentação?"
-- **Resposta esperada:** Valor baseado no `transacoes.csv`
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resposta esperada:** R$ 570,00, valor baseado no `transacoes.csv`
+- **Resposta obtida:** '''Olá João! Seguindo os dados recentes, você gastou com alimentação no total de R$570,00. Isso inclui: R$450,00 no supermercado (2025-10-03)R$120,00 em restaurantes (2025-10-10)
+    Você entendeu? 😊'''
+- **Resultado:** [x] Correto  [ ] Incorreto
 
 ### Teste 2: Recomendação de produto
 - **Pergunta:** "Qual investimento você recomenda para mim?"
 - **Resposta esperada:** Produto compatível com o perfil do cliente
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resposta obtida:** Para construir uma reserva de emergência, é essencial manter o dinheiro  em produtos com alta liquidez e baixo risco, como os Tesuros Selic ou CDBs Liquidez Diária.
+
+    Tesuros Selic: Oferecem juros seguros, equivalentes à taxa de Selic (taxa de juros do governo), e permitem acesso imediato sem penalidades. São ideais para iniciantes que buscam segurança e liquidez rápida.
+    CDBs Liquidez Diária: Propõem juros diários, mas exigem um mínimo de R$100 para investimento. São úteis para quem deseja ganhar rendimento rápido sem comprometer a acessibilidade do dinheiro.
+    Evite produtos com prazos longos (como LCI/LCA), pois podem não ser acessíveis imediatamente em caso de necessidade. Dado seu perfil moderado, ambos os produtos mencionados são adequados para garantir segurança e liquidez, sem comprometer a finalidade da reserva de emergência.
+
+    Lembre-se: a reserva de emergência deve ser mantida em conta de liquidez, não em investimentos com risco ou prazos longos.
+- **Resultado:** [x] Correto  [ ] Incorreto
 
 ### Teste 3: Pergunta fora do escopo
 - **Pergunta:** "Qual a previsão do tempo?"
 - **Resposta esperada:** Agente informa que só trata de finanças
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resposta obtida:** Lamento, mas não posso fornecer previsões do tempo. Meu foco é ajudar com assuntos de finanças. Quer saber como construir sua reserva de emergência ou outras dicas financeiras? 😊
+- **Resultado:** [x] Correto  [ ] Incorreto
 
 ### Teste 4: Informação inexistente
-- **Pergunta:** "Quanto rende o produto XYZ?"
+- **Pergunta:** "Quanto rende o produto ITUB4?"
 - **Resposta esperada:** Agente admite não ter essa informação
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resposta obtida:** Desculpe, João. O produto ITUB4 não está listado nos produtos    financeiros disponíveis para você (como CDBs, Tesouro Selic, LCI/LCA, etc.). O ITUB4 é um   código de ticker para ações da Itaú Unibanco no mercado brasileiro, mas não é um produto de    investimento que oferecemos aqui — nossa lista está focada em opções seguras e adequadas para resgate rápido, como a sua reserva de emergência.
+
+    Para ajudar você a construir sua reserva com segurança, posso explicar como os produtos que estão disponíveis rendem (por exemplo, Tesouro Selic ou CDB Liquidez Diária). Deseja saber mais sobre algum desses? 😊
+- **Resultado:** [x] Correto  [ ] Incorreto
 
 ---
 
 ## Resultados
 
-Após os testes, registre suas conclusões:
+Após os testes, as conclusões foram:
 
 **O que funcionou bem:**
-- [Liste aqui]
+- Os retornos dos testes sairam conforme o esperado. Não houveram alucinações e o comportamento da analista AnaLis foi adequado.
+- Foi necessário ajustar o prompt para que as respostas fossem sempre em português.
 
 **O que pode melhorar:**
-- [Liste aqui]
+- Ao fazer uma pergunta simples, o agente estava trazendo muito mais informações do que foi solicitado. Esse ajuste foi feito alterando o prompt.
 
----
-
-## Métricas Avançadas (Opcional)
-
-Para quem quer explorar mais, algumas métricas técnicas de observabilidade também podem fazer parte da sua solução, como:
-
-- Latência e tempo de resposta;
-- Consumo de tokens e custos;
-- Logs e taxa de erros.
-
-Ferramentas especializadas em LLMs, como [LangWatch](https://langwatch.ai/) e [LangFuse](https://langfuse.com/), são exemplos que podem ajudar nesse monitoramento. Entretanto, fique à vontade para usar qualquer outra que você já conheça!
