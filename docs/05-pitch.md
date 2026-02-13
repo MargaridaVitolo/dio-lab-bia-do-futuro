@@ -59,16 +59,14 @@ Edição: Use legendas dinâmicas quando falar termos técnicos como "Ollama", "
 
 ## Checklist do Pitch
 
-- [ ] Duração máxima de 3 minutos
-- [ ] Problema claramente definido
-- [ ] Solução demonstrada na prática
-- [ ] Diferencial explicado
-- [ ] Áudio e vídeo com boa qualidade
+- [x] Duração máxima de 3 minutos
+- [x] Problema claramente definido
+- [x] Solução demonstrada na prática
+- [x] Diferencial explicado
+- [x] Áudio e vídeo com boa qualidade
 
 ---
 
 ## Link do Vídeo
-
-> Cole aqui o link do seu pitch (YouTube, Loom, Google Drive, etc.)
 
 [\[AnaLis - Sua Analista Financeira Inteligente\]](https://youtu.be/0f14QezQWjU)
