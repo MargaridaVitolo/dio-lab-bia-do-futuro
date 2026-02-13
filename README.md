@@ -34,7 +34,9 @@ O desenvolvimento do projeto foi documentado em etapas detalhadas:
 
 - [Design de Prompts:](./docs/03-prompts-e-configuracoes.md) Detalhamento do System Prompt e técnicas de Few-Shot Prompting para evitar alucinações.
 
-- [Pitch de Apresentação:](./docs/04-pitch.md) Proposta de valor e impacto da solução no mercado financeiro.
+- [Métricas e Avaliações:](./docs/04-metricas.md) Como foram realizadas as métricas e avaliações do projeto.
+
+- [Pitch de Apresentação:](./docs/05-pitch.md) Proposta de valor e impacto da solução no mercado financeiro.
 
 ## 🛠️ Tecnologias Utilizadas
 
