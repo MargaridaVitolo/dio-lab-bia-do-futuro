@@ -1,110 +1,52 @@
-# 🤖 Agente Financeiro Inteligente com IA Generativa
+# 🤖 AnaLis: Analis(ta) Financeira Inteligente
 
 ## Contexto
 
-Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots reativos para **agentes inteligentes e proativos**. Neste desafio, você vai idealizar e prototipar um agente financeiro que utiliza IA Generativa para:
-
-- **Antecipar necessidades** ao invés de apenas responder perguntas
-- **Personalizar** sugestões com base no contexto de cada cliente
-- **Cocriar soluções** financeiras de forma consultiva
-- **Garantir segurança** e confiabilidade nas respostas (anti-alucinação)
-
-> [!TIP]
-> Na pasta [`examples/`](./examples/) você encontra referências de implementação para cada etapa deste desafio.
+AnaLis é uma assistente virtual de nova geração desenvolvida para o setor financeiro. Diferente de chatbots tradicionais, a AnaLis atua como uma consultora proativa, utilizando IA Generativa para transformar dados transacionais em insights acionáveis e planejamento financeiro personalizado.
 
 ---
 
-## O Que Você Deve Entregar
+## 🎯 Objetivo do Projeto
 
-### 1. Documentação do Agente
-
-Defina **o que** seu agente faz e **como** ele funciona:
-
-- **Caso de Uso:** Qual problema financeiro ele resolve? (ex: consultoria de investimentos, planejamento de metas, alertas de gastos)
-- **Persona e Tom de Voz:** Como o agente se comporta e se comunica?
-- **Arquitetura:** Fluxo de dados e integração com a base de conhecimento
-- **Segurança:** Como evitar alucinações e garantir respostas confiáveis?
-
-📄 **Template:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
+Este repositório contém a solução desenvolvida para o desafio BIA do Futuro (DIO), focando na criação de um agente que antecipa necessidades do cliente e garante segurança nas recomendações (anti-alucinação).
 
 ---
 
-### 2. Base de Conhecimento
+## 🧠 A Solução: AnaLis
 
-Utilize os **dados mockados** disponíveis na pasta [`data/`](./data/) para alimentar seu agente:
+ * A AnaLis foi projetada para resolver o problema da falta de clareza financeira dos usuários, atuando em:
 
-| Arquivo | Formato | Descrição |
-|---------|---------|-----------|
-| `transacoes.csv` | CSV | Histórico de transações do cliente |
-| `historico_atendimento.csv` | CSV | Histórico de atendimentos anteriores |
-| `perfil_investidor.json` | JSON | Perfil e preferências do cliente |
-| `produtos_financeiros.json` | JSON | Produtos e serviços disponíveis |
+* Análise de Gastos: Identificação automática de padrões e alertas de consumo.
 
-Você pode adaptar ou expandir esses dados conforme seu caso de uso.
+* Consultoria de Investimentos: Sugestões baseadas no perfil individual e produtos disponíveis.
 
-📄 **Template:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
+* Planejamento de Metas: Cocriação de estratégias para alcance de objetivos financeiros.
 
 ---
 
-### 3. Prompts do Agente
+## 🏗️ Estrutura da Documentação
 
-Documente os prompts que definem o comportamento do seu agente:
+O desenvolvimento do projeto foi documentado em etapas detalhadas:
 
-- **System Prompt:** Instruções gerais de comportamento e restrições
-- **Exemplos de Interação:** Cenários de uso com entrada e saída esperada
-- **Tratamento de Edge Cases:** Como o agente lida com situações limite
+- [Documentação do Agente:](./docs/01-documentacao-agente.md) Definição da Persona, Tom de Voz (Educativo e Seguro) e Arquitetura do fluxo de dados.
 
-📄 **Template:** [`docs/03-prompts.md`](./docs/03-prompts.md)
+- [Base de Conhecimento:](./docs/02-base-conhecimento.md) Estruturação dos dados (Transações, Perfil e Histórico) que alimentam a inteligência da AnaLis.
 
----
+- [Design de Prompts:](./docs/03-prompts-e-configuracoes.md) Detalhamento do System Prompt e técnicas de Few-Shot Prompting para evitar alucinações.
 
-### 4. Aplicação Funcional
+- [Pitch de Apresentação:](./docs/04-pitch.md) Proposta de valor e impacto da solução no mercado financeiro.
 
-Desenvolva um **protótipo funcional** do seu agente:
+## 🛠️ Tecnologias Utilizadas
 
-- Chatbot interativo (sugestão: Streamlit, Gradio ou similar)
-- Integração com LLM (via API ou modelo local)
-- Conexão com a base de conhecimento
+IA Generativa: Modelagem de linguagem para respostas consultivas.
 
-📁 **Pasta:** [`src/`](./src/)
+Prompt Engineering: Estruturação de contextos e travas de segurança.
+
+Markdown: Para documentação técnica e estruturada.
 
 ---
 
-### 5. Avaliação e Métricas
-
-Descreva como você avalia a qualidade do seu agente:
-
-**Métricas Sugeridas:**
-- Precisão/assertividade das respostas
-- Taxa de respostas seguras (sem alucinações)
-- Coerência com o perfil do cliente
-
-📄 **Template:** [`docs/04-metricas.md`](./docs/04-metricas.md)
-
----
-
-### 6. Pitch
-
-Grave um **pitch de 3 minutos** (estilo elevador) apresentando:
-
-- Qual problema seu agente resolve?
-- Como ele funciona na prática?
-- Por que essa solução é inovadora?
-
-📄 **Template:** [`docs/05-pitch.md`](./docs/05-pitch.md)
-
----
-
-## Ferramentas Sugeridas
-
-Todas as ferramentas abaixo possuem versões gratuitas:
-
-| Categoria | Ferramentas |
-|-----------|-------------|
-| **LLMs** | [ChatGPT](https://chat.openai.com/), [Copilot](https://copilot.microsoft.com/), [Gemini](https://gemini.google.com/), [Claude](https://claude.ai/), [Ollama](https://ollama.ai/) |
-| **Desenvolvimento** | [Streamlit](https://streamlit.io/), [Gradio](https://www.gradio.app/), [Google Colab](https://colab.research.google.com/) |
-| **Orquestração** | [LangChain](https://www.langchain.com/), [LangFlow](https://www.langflow.org/), [CrewAI](https://www.crewai.com/) |
-| **Diagramas** | [Mermaid](https://mermaid.js.org/), [Draw.io](https://app.diagrams.net/), [Excalidraw](https://excalidraw.com/) |
+Este projeto foi desenvolvido como parte do laboratório "BIA do Futuro" na plataforma DIO.
 
 ---
 
@@ -129,21 +71,9 @@ Todas as ferramentas abaixo possuem versões gratuitas:
 │   └── 05-pitch.md                   # Roteiro do pitch
 │
 ├── 📁 src/                           # Código da aplicação
-│   └── app.py                        # (exemplo de estrutura)
-│
-├── 📁 assets/                        # Imagens e diagramas
-│   └── ...
-│
-└── 📁 examples/                      # Referências e exemplos
-    └── README.md
+│   ├── app_Ollama.py                 # (Qwen3:4b)
+│   └── app_Gemini.py                 # (models/gemini-2.5-flash)
+
 ```
 
 ---
-
-## Dicas Finais
-
-1. **Comece pelo prompt:** Um bom system prompt é a base de um agente eficaz
-2. **Use os dados mockados:** Eles garantem consistência e evitam problemas com dados sensíveis
-3. **Foque na segurança:** No setor financeiro, evitar alucinações é crítico
-4. **Teste cenários reais:** Simule perguntas que um cliente faria de verdade
-5. **Seja direto no pitch:** 3 minutos passam rápido, vá ao ponto
