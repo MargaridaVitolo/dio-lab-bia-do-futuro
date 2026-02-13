@@ -5,7 +5,7 @@ import google.generativeai as genai
 
 # --- CONFIGURAÇÕES DA API ---
 # Substitua pela sua chave gerada no Google AI Studio
-GOOGLE_API_KEY = "AIzaSyB1WbRoj1JEHdC8C0rGTZHCq-6rWWNwvpA" #"SUA_API_KEY_AQUI" 
+GOOGLE_API_KEY = "SUA_API_KEY_AQUI" 
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # Debug: listar todos os modelos disponíveis
